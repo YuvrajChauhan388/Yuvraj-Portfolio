@@ -1,4 +1,5 @@
 import BITS_Logo from "./BITS_Logo.jpg";
+import DAV_Logo from "./DAV_Logo.jpg";
 
 export const Bio = {
   name: "Yuvraj Chauhan",
@@ -136,11 +137,15 @@ export const skills = [
         image:
           "https://static-00.iconduck.com/assets.00/google-cloud-platform-logo-icon-2048x1824-pg4wzspq.png",
       },
+      //{
+        //name: "Docker",
+        //image:
+          //"https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
+      //},
       {
-        name: "Docker",
-        image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
-      },
+        name: "Streamlit",
+        image: "https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.png"
+      },      
       //{
         //name: "Jenkins",
         //image:
@@ -295,12 +300,10 @@ export const experiences = [
     role: " Research Assistant",
     company: "BITS Pilani Hyderabad Campus",
     date: "Jan 2024 - Present",
-    desc: " Developed a Dash-based web app for real-time signal analysis using Wavelet Decomposition (bior2.4), FFT, and Spectrograms to extract insights from acceleration data, incorporating denoising and statistical computations for stability prediction. Integrated machine learning metrics (RMSE, Pearson Correlation, Shannon Entropy, SNR) with interactive visualizations, real-time updates, and CSV export for efficient analysis and decision-making.",
+    desc: " Developed a Dash-based web app for real-time signal analysis using Wavelet Decomposition (bior), FFT, and Spectrograms to extract insights from acceleration data, incorporating denoising and statistical computations for stability prediction. Integrated machine learning metrics (RMSE, Pearson Correlation, Shannon Entropy, SNR) with interactive visualizations, real-time updates, and CSV export for efficient analysis and decision-making.",
     skills: [
       "Python",
-      "React",
       "Flask",
-      "C++",
       "Machine Learning",
       "Data Visualization",
       "IoT",
@@ -377,33 +380,34 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Kiit.jpeg?alt=media&token=3839d520-c59d-4341-ad8f-0980c98de4dd",
-    school: "Kalinga Institute of Industrial Technology, Bhubaneswar",
-    date: "Oct 2021 - Sep 2025",
-    grade: "8.41 CGPA",
-    desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Kalinga Institute of Industrial Technology, Bhubaneswar. I have completed 4 semesters and have a CGPA of 8.71. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the Google Developers Student Club (GDSC) at KIIT, where I am learning and working on exciting projects with a team of talented developers.",
+    img: BITS_Logo,
+    school: "Birla Institute of Technology and Science, Pilani",
+    date: " Oct 2022- Jul 2026",
+    //grade: "8.41 CGPA",
+    desc: "I am currently pursuing a Bachelor’s degree in Computer Science and Engineering at Birla Institute of Technology and Science, Pilani. Having completed six semesters, I have also gained practical industry experience through a two-month Practice School program at SASCO Steel Pvt. Ltd. Throughout my academic journey, I have undertaken coursework in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among other foundational and advanced subjects.",
     degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
   },
   {
     id: 1,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
-    school: "Methodist School, Dankuni",
-    date: "Apr 2019 - Apr 2025",
-    grade: "88.2%",
-    desc: "I completed my class 12 high school education at Methodist School, Dankuni, where I studied Science with Computer Science.",
-    degree: "ISC(XII), Science with Computer",
+    img: DAV_Logo,
+    school: "DAV Public School, Bistupur",
+    date: "Apr 2020- Mar 2022",
+    //grade: "88.2%",
+    desc: "I completed my class 12 high school education at DAV Public School, Bistupur, where I studied Science with Computer Science.",
+    degree: "CBSE(XII), Science with Computer",
   },
   {
     id: 2,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
-    school: "Methodist School, Dankuni",
-    date: "Apr 2017 - Apr 2019",
-    grade: "92.3%",
-    desc: "I completed my class 10 education at Methodist School, Dankuni, where I studied Science with Computer Application.",
-    degree: "ICSC(X), Science with Computer",
+    img: require("./RV_Logo.png"),
+    school: "Rajendra Vidyalaya, Jamshedpur",
+    date: "Apr 2008- Mar 2020",
+    //grade: "92.3%",
+    desc: "I completed my class 10 education at Rajendra Vidyalaya, Jamshedpur, where I studied Science with Computer Application.",
+    degree: "ICSE(X), Science with Computer",
   },
 ];
 
+/*
 export const projects = [
   {
     id: 11,
@@ -614,5 +618,29 @@ export const projects = [
     category: "machine learning",
     github: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
     webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
+  },
+];
+*/
+export const projects = [
+  {
+    id: 0,
+    title: "Sibilytics-AI",
+    date: "Jan 2024 - Apr 2024",
+    description:
+      "Sibilytics-AI is a Streamlit-based web application tailored for wavelet-based feature extraction from time-series sensor signals. Users can upload data in .txt or .lvm formats, dynamically select wavelet decomposition levels (1–20), and process the signals using the Biorthogonal (bior) wavelet. The platform offers interactive and insightful visualizations, including time-domain plots, STFT spectrograms, FFT plots, and wavelet decomposition views, all for both raw and denoised signals. It also provides correlation plots and allows users to download any plot as a PNG. In addition to visualization, the app extracts statistical, energy-based, and entropy-based features from the signals, with an option to export the results for further analysis. Designed for researchers, engineers, and analysts, Sibilytics AI delivers a fast and user-friendly experience for signal processing workflows.",
+      image: require("./Sibilytics-AI.png"),
+    tags: [
+      "Streamlit",
+      "Python",
+      "Wavelet Transform",
+      "Signal Processing",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "SciPy",
+    ],
+    category: "web app",
+    github: "https://github.com/YuvrajChauhan388/Sibilytics-AI",
+    webapp: "https://sibilytics-ai.streamlit.app/",
   },
 ];

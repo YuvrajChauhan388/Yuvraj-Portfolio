@@ -132,8 +132,9 @@ const Navbar = () => {
   return (
     <Nav>
       <NavbarContainer>
-        <NavLogo to="/">GeeksForGeeks</NavLogo>
-
+      <NavLogo to="/">
+  <img src="/Yuvraj_Logo.jpg" alt="Yuvraj Logo" style={{ height: "40px" }} />
+</NavLogo>
         <MobileIcon onClick={() => setIsOpen(!isOpen)}>
           <MenuRounded style={{ color: "inherit" }} />
         </MobileIcon>

@@ -26,22 +26,23 @@ const NavbarContainer = styled.div`
   justify-content: space-between;
   font-size: 1rem;
 `;
+
 const NavLogo = styled(LinkR)`
-  width: 80%;
-  padding: 0 6px;
-  font-weight: 500;
-  font-size: 18px;
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  color: inherit;
+`;
+
+const LogoImage = styled.img`
+  height: 40px;
+  width: auto;
 `;
 
 const NavItems = styled.ul`
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 32px;
-  padding: 0 6px;
   list-style: none;
 
   @media screen and (max-width: 768px) {
@@ -61,12 +62,10 @@ const NavLink = styled.a`
 `;
 
 const ButtonContainer = styled.div`
-  width: 80%;
-  height: 100%;
   display: flex;
   justify-content: end;
   align-items: center;
-  padding: 0 6px;
+
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -75,7 +74,6 @@ const ButtonContainer = styled.div`
 const GithubButton = styled.a`
   border: 1px solid ${({ theme }) => theme.primary};
   color: ${({ theme }) => theme.primary};
-  justify-content: center;
   display: flex;
   align-items: center;
   border-radius: 20px;
@@ -92,31 +90,24 @@ const GithubButton = styled.a`
 `;
 
 const MobileIcon = styled.div`
-  height: 100%;
-  display: flex;
-  align-items: center;
-  color: ${({ theme }) => theme.text_primary};
   display: none;
+
   @media screen and (max-width: 768px) {
     display: block;
+    color: ${({ theme }) => theme.text_primary};
   }
 `;
 
 const MobileMenu = styled.ul`
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 16px;
-  padding: 0 6px;
-  list-style: none;
-  width: 100%;
   padding: 12px 40px 24px 40px;
   background: ${({ theme }) => theme.card_light + 99};
   position: absolute;
   top: 80px;
   right: 0;
-
   transition: all 0.6s ease-in-out;
   transform: ${({ isOpen }) =>
     isOpen ? "translateY(0)" : "translateY(-100%)"};
@@ -124,17 +115,23 @@ const MobileMenu = styled.ul`
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   z-index: ${({ isOpen }) => (isOpen ? "1000" : "-1000")};
+
+  @media screen and (min-width: 769px) {
+    display: none;
+  }
 `;
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const theme = useTheme();
+
   return (
     <Nav>
       <NavbarContainer>
-      <NavLogo to="/">
-  <img src="/Yuvraj_Logo.jpg" alt="Yuvraj Logo" style={{ height: "40px" }} />
-</NavLogo>
+        <NavLogo to="/">
+          <LogoImage src="/Yuvraj_Logo.jpg" alt="Yuvraj Logo" />
+        </NavLogo>
+
         <MobileIcon onClick={() => setIsOpen(!isOpen)}>
           <MenuRounded style={{ color: "inherit" }} />
         </MobileIcon>

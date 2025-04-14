@@ -3,7 +3,7 @@ import { Link as LinkR } from "react-router-dom";
 import styled, { useTheme } from "styled-components";
 import { Bio } from "../data/constants";
 import { MenuRounded } from "@mui/icons-material";
-import logo from "./Yuvraj_Logo.jpg";
+import logo from "./Yuvraj_Logo.png";
 
 const Nav = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -132,7 +132,7 @@ const Navbar = () => {
     <Nav>
       <NavbarContainer>
         <NavLogo to="/">
-          <img src={`./Yuvraj_Logo.jpg`} alt="Yuvraj's Logo" style={{ height: "40px" }} />
+          <img src={`./Yuvraj_Logo.png`} alt="Yuvraj's Logo" style={{ height: "40px" }} />
         </NavLogo>
 
         <MobileIcon onClick={() => setIsOpen(!isOpen)}>

@@ -126,11 +126,10 @@ const MobileMenu = styled.ul`
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const theme = useTheme();
-
+  
   // Define the public URL for GitHub Pages deployment
-  // Use %PUBLIC_URL% for create-react-app or process.env.PUBLIC_URL
   const logoPath = process.env.PUBLIC_URL + "/Yuvraj_Logo.png";
-
+  
   return (
     <Nav>
       <NavbarContainer>

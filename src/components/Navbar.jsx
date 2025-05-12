@@ -3,7 +3,6 @@ import { Link as LinkR } from "react-router-dom";
 import styled, { useTheme } from "styled-components";
 import { Bio } from "../data/constants";
 import { MenuRounded } from "@mui/icons-material";
-import logo from "./Yuvraj_Logo.png";
 
 const Nav = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -128,11 +127,15 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const theme = useTheme();
 
+  // Define the public URL for GitHub Pages deployment
+  // Use %PUBLIC_URL% for create-react-app or process.env.PUBLIC_URL
+  const logoPath = process.env.PUBLIC_URL + "/Yuvraj_Logo.png";
+
   return (
     <Nav>
       <NavbarContainer>
         <NavLogo to="/">
-          <img src={logo} alt="Yuvraj's Logo" style={{ height: "40px" }} />
+          <img src={logoPath} alt="Yuvraj's Logo" style={{ height: "40px" }} />
         </NavLogo>
 
         <MobileIcon onClick={() => setIsOpen(!isOpen)}>

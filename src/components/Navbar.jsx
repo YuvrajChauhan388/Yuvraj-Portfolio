@@ -132,7 +132,7 @@ const Navbar = () => {
     <Nav>
       <NavbarContainer>
         <NavLogo to="/">
-          <img src={`./Yuvraj_Logo.png`} alt="Yuvraj's Logo" style={{ height: "40px" }} />
+          <img src={logo} alt="Yuvraj's Logo" style={{ height: "40px" }} />
         </NavLogo>
 
         <MobileIcon onClick={() => setIsOpen(!isOpen)}>

@@ -1,17 +1,22 @@
 {
   "files": {
     "main.css": "/Yuvraj-Portfolio/static/css/main.4a798148.css",
-    "main.js": "/Yuvraj-Portfolio/static/js/main.da9fbcc6.js",
+    "main.js": "/Yuvraj-Portfolio/static/js/main.cc18b816.js",
+    "static/media/OEM_System.png": "/Yuvraj-Portfolio/static/media/OEM_System.308b4c64d38d5208bf69.png",
+    "static/media/Email_Writier.png": "/Yuvraj-Portfolio/static/media/Email_Writier.114ddd714771541dc6c0.png",
+    "static/media/TATA_Logo.png": "/Yuvraj-Portfolio/static/media/TATA_Logo.7964b6cffd85f6167413.png",
+    "static/media/My_Resume.pdf": "/Yuvraj-Portfolio/static/media/My_Resume.c6cd467ace36d7cdf628.pdf",
     "static/media/Sibilytics-AI.png": "/Yuvraj-Portfolio/static/media/Sibilytics-AI.64646d0504c806976db5.png",
     "static/media/Own.jpg": "/Yuvraj-Portfolio/static/media/Own.3ebd9b436c5546e37378.jpg",
     "static/media/BITS_Logo.jpg": "/Yuvraj-Portfolio/static/media/BITS_Logo.da402f68c5c85ee9f3cb.jpg",
     "static/media/RV_Logo.png": "/Yuvraj-Portfolio/static/media/RV_Logo.1d6436305e396af8d933.png",
+    "static/media/BitBucket.png": "/Yuvraj-Portfolio/static/media/BitBucket.158ada3392666ac1d82d.png",
     "index.html": "/Yuvraj-Portfolio/index.html",
     "main.4a798148.css.map": "/Yuvraj-Portfolio/static/css/main.4a798148.css.map",
-    "main.da9fbcc6.js.map": "/Yuvraj-Portfolio/static/js/main.da9fbcc6.js.map"
+    "main.cc18b816.js.map": "/Yuvraj-Portfolio/static/js/main.cc18b816.js.map"
   },
   "entrypoints": [
     "static/css/main.4a798148.css",
-    "static/js/main.da9fbcc6.js"
+    "static/js/main.cc18b816.js"
   ]
 }

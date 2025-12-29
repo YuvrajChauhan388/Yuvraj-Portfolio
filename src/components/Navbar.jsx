@@ -126,16 +126,16 @@ const MobileMenu = styled.ul`
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const theme = useTheme();
-  
+
   // Define the public URL for GitHub Pages deployment
   const logoPath = process.env.PUBLIC_URL + "/Yuvraj_Logo.png";
-  
+
   return (
     <Nav>
       <NavbarContainer>
         <NavLogo to="/">
-  <img src={logoPath} alt="Yuvraj's Logo" style={{ height: "40px" }} />
-</NavLogo>
+          <img src={logoPath} alt="Yuvraj's Logo" style={{ height: "40px" }} />
+        </NavLogo>
 
         <MobileIcon onClick={() => setIsOpen(!isOpen)}>
           <MenuRounded style={{ color: "inherit" }} />

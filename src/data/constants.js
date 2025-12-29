@@ -1,10 +1,12 @@
 import BITS_Logo from "./BITS_Logo.jpg";
 import DAV_Logo from "./DAV_Logo.jpg";
-import TATA_Logo from "./TATA_Logo.png";
+// import TATA_Logo from "./TATA_Logo.png";
+import TATA_Logo from "./Tata_Power_Logo.png";
 import AWS from "./AWS.png";
 import Swagger from "./Swagger.png";
 import BitBucket from "./BitBucket.png";
 import My_Resume from "./My_Resume.pdf";
+import Synchrony_Logo from "./Synchrony_Logo.png";
 
 export const Bio = {
   name: "Yuvraj Chauhan",
@@ -305,16 +307,50 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: require("./Sasco_Logo.png"),
-    role: "Frontend Engineer Intern",
-    company: "SASCO Steel Pvt. Ltd.",
-    date: "May 2024 - July 2024",
-    desc: "Used HTML, CSS, and JavaScript to redesign key sections, creating an intuitive, visually appealing interface with responsive design across desktop, tablet, and mobile devices. Worked closely with team members, leveraging JavaScript to implement feedback and ensure alignment with company goals for a cohesive user experience.",
-    skills: ["HTML", "CSS", "JavaScript"],
-    //doc: "https://drive.google.com/file/d/1IgD0K5FKb_df0youTZUx-aixQ_BXCbUt/view?usp=sharing",
+    img: Synchrony_Logo,
+    role: "Full-Stack Technology Intern",
+    company: "Synchrony Financial",
+    date: "July 2025 – December 2025",
+    desc: "Migrated a large-scale legacy Thymeleaf UI to a modern React architecture, enhancing performance and scalability across enterprise partner workflows. Built reusable components, modal-driven business logic (On-Hold & Decline reasons), form validations, and seamless REST API integrations — reducing UI data errors and improving user efficiency. Collaborated with cross-functional teams in an Agile environment, driving UI/UX improvements, clean architecture, and production-ready code with version-controlled deployments.",
+    skills: [
+      "React.js",
+      "JavaScript (ES6+)",
+      "HTML5",
+      "CSS3",
+      "REST APIs",
+      "UI/UX",
+      "Redux-Form",
+      "Component Architecture",
+      "Agile Development",
+      "Git",
+      "Debugging & Code Reviews",
+      "Performance Optimization",
+    ],
   },
+
   {
     id: 1,
+    img: TATA_Logo,
+    role: "Data Analytics & Web-App Intern",
+    company: "TATA Power",
+    date: "May 2025 - Jul 2025",
+    desc: "Developed an interactive Streamlit-based OEM Inventory Analysis System to predict unit prices and replenishment events. Implemented advanced data cleaning, historical year detection with regex, inflation-adjusted price forecasting, and visualization of replenishment timelines. Automated workflows for multiple inventory items, enabling actionable insights for operational planning and reducing manual effort significantly.",
+    skills: [
+      "Python",
+      "Streamlit",
+      "Pandas",
+      "Matplotlib",
+      "Data Analytics",
+      "Regex",
+      "Data Visualization",
+      "Web Development",
+      "Predictive Modelling",
+      "GitHub",
+    ],
+  },
+
+  {
+    id: 2,
     img: BITS_Logo,
     role: "Research Assistant",
     company: "BITS Pilani Hyderabad Campus",
@@ -334,25 +370,16 @@ export const experiences = [
       "CSV Export",
     ],
   },
+
   {
-    id: 2,
-    img: TATA_Logo,
-    role: "Data Analytics & Web-App Intern",
-    company: "TATA Power",
-    date: "May 2025 - Jul 2025",
-    desc: "Developed an interactive Streamlit-based OEM Inventory Analysis System to predict unit prices and replenishment events. Implemented advanced data cleaning, historical year detection with regex, inflation-adjusted price forecasting, and visualization of replenishment timelines. Automated workflows for multiple inventory items, enabling actionable insights for operational planning and reducing manual effort significantly.",
-    skills: [
-      "Python",
-      "Streamlit",
-      "Pandas",
-      "Matplotlib",
-      "Data Analytics",
-      "Regex",
-      "Data Visualization",
-      "Web Development",
-      "Predictive Modelling",
-      "GitHub",
-    ],
+    id: 3,
+    img: require("./Sasco_Logo.png"),
+    role: "Frontend Engineer Intern",
+    company: "SASCO Steel Pvt. Ltd.",
+    date: "May 2024 - July 2024",
+    desc: "Used HTML, CSS, and JavaScript to redesign key sections, creating an intuitive, visually appealing interface with responsive design across desktop, tablet, and mobile devices. Worked closely with team members, leveraging JavaScript to implement feedback and ensure alignment with company goals for a cohesive user experience.",
+    skills: ["HTML", "CSS", "JavaScript"],
+    //doc: "https://drive.google.com/file/d/1IgD0K5FKb_df0youTZUx-aixQ_BXCbUt/view?usp=sharing",
   },
 
   /* {
